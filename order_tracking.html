@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Tracking</title>
+    <link rel="stylesheet" href="css/style_ordertracking.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Order Tracking</h1>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Status</th>
+                        <th>Item</th>
+                        <th>Quantity</th>
+                        <th>Total Price</th>
+                    </tr>
+                </thead>
+                <tbody id="order-table-body">
+                    <!-- Dữ liệu sẽ được chèn vào đây từ JavaScript -->
+                </tbody>
+            </table>
+        </div>
+
+        <div id="loading" class="loading"></div>
+        <p id="order-completed" style="display: none;">Order completed!</p>
+    </div>
+
+    <!-- Import file JS -->
+    <script src="js/ordertracking.js"></script>
+</body>
+</html>
